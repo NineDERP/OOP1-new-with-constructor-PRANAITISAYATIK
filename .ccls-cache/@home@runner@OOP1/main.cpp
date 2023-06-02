@@ -3,7 +3,7 @@ using namespace std;
 
 #include "student.h"
 
-int main() {
+int main(int argc, char* argv[]) {
 /*  student s1,s2;
 
  // s1.name="PUN";  // ERROR, it is in private
@@ -18,24 +18,42 @@ int main() {
        else  s2.print_name(); 
       cout <<"is older"<<endl;
 */
-     student Cst[10],*p;
+     /*student Cst[10],*p=new student[(argc-1)/3];
      int i;
      string n;
-     for(i=0;i<3;i++){
-         cout<<"What is your name?";
+    int a;
+    float s;
+     for(i=1;i<(argc-1)/3;i+=3){
+        /* cout<<"What is your name?";
          cin>>n;
-         Cst[i].set_name(n);
-     }
-    for(i=0;i<3;i++){
+        cout<<"What is your age?";
+         cin>>a;
+        cout<<"What is your score?";
+         cin>>s;
        
-         Cst[i].print_name();
-     }
-    cout<<endl;
+         Cst[i].set_all(argv[i],atoi(argv[i+1]),atof(argv[i+2]));*/
+     
+  student s(20,"Frank");
+  }
+  
+  
+ /*
+ for(i=0;i<5;i++){
+       
+      (p+i)->print_all();
+}
+ 
+  
+  p=new student;
+  
+  p->set_all("Frank",19,0);
+  p->print_all();
+
+  delete p;
+   /* cout<<endl;
     cout<<"Pointer"<<endl;
     p=&Cst[2];
     (*p).print_name();
     p->print_name();
-    (p-1)->print_name();
-}
-
-//CST --> Joe  Jim Jan*
+    (p-1)->print_name();*/
+   
